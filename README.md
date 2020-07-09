@@ -1,6 +1,4 @@
-<p align="center">
-  <img src="https://raw.githubusercontent.com/vitormalencar/vitormalencar/master/artwork.png" alt="Vitor Alencar" />
-</p>
+ <img src="https://raw.githubusercontent.com/vitormalencar/vitormalencar/master/artwork.png" alt="Vitor Alencar" />
 
 
 
