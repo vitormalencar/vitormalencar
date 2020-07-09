@@ -1,4 +1,4 @@
- <img src="https://raw.githubusercontent.com/vitormalencar/vitormalencar/master/artwork.png" alt="Vitor Alencar" />
+ <img src="https://raw.githubusercontent.com/vitormalencar/vitormalencar/master/artwork.png" height='200' widht='400' alt="Vitor Alencar" />
 
 
 
