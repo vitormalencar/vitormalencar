@@ -5,7 +5,6 @@ import { Work } from "./Work/Work"
 import { Talks } from "./Talks/Talks"
 import { Social } from "./Social/Social"
 import { Projects } from "./Projects/Projects"
-import { Interviews } from "./Interviews/Interviews"
 
 import { work, social, about, talks, projects } from "../../data.json"
 
@@ -21,7 +20,6 @@ const App = () => (
       <Projects projects={projects} />
       <Work work={work} />
       <Talks talks={talks} />
-      <Interviews />
     </div>
   </div>
 )
