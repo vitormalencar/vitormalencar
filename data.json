@@ -75,21 +75,21 @@
   "projects": [
     {
       "img": "https://pbs.twimg.com/profile_images/576433782154113025/y4KXohXr.png",
-      "title": "DEV IO FOUNDATION",
+      "title": "Dev IO Foundation",
       "description": "The main idea of DEVIO Foundation is to unite all development groups in one place, making it possible to contribute actively to the growth of local community development.",
       "url": "https://github.com/deviofoundation",
       "repo": ""
     },
     {
       "img": "https://pbs.twimg.com/profile_images/576433782154113025/y4KXohXr.png",
-      "title": "GOOGLE DEVELOPER GROUPS FORTALEZA",
+      "title": "Google developer groups fortaleza",
       "description": "Google developer groups (GDG), community built for developers interested in Google's technology; Everything from Android, Chrome, Drive, and Google Cloud platforms, to product APIs like the Cast API, Maps API, and YouTube API.",
       "url": "http://gdgfortaleza.org",
       "repo": ""
     },
     {
       "img": "https://pbs.twimg.com/profile_images/576433782154113025/y4KXohXr.png",
-      "title": "FRONT-IN FORTALEZA",
+      "title": "Front-in fortaleza",
       "description": "Front-in Fortaleza (FIF) was born as a Front-End conference, today we are the second largest development event in Fortaleza-CE, Our goal is to unite the development community and share knowledge.",
       "url": "http://frontinfortaleza.com.br/",
       "repo": "https://github.com/cobidev/react-simplefolio"
