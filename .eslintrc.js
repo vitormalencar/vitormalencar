@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 module.exports = {
   env: { browser: true, es6: true },
   extends: ["eslint:recommended", "plugin:react/recommended"],
@@ -6,5 +7,5 @@ module.exports = {
     ecmaVersion: 2018,
     sourceType: "module",
   },
-  rules: {},
+  rules: { "react/prop-types": 0 },
 }
