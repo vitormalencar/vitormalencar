@@ -7,8 +7,8 @@ export const Social = ({ social }) => (
         <li key={name} className="mx-16">
           <a
             href={url}
-            target="_blank"
             rel="noreferrer"
+            target="_blank"
             className="flex items-center"
           >
             {name}

@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.-shift-y-96 {
+  transform: translateY(-96px);
+}
+.-shift-y-64 {
+  transform: translateY(-64px);
+}
+.shift-0 {
+  transform: translateY(0);
+}
+.gradient-y-transparent-night {
+  background: linear-gradient(180deg, rgba(21, 21, 21, 0), #151515);
+}
+.gradient-y-night-transparent {
+  background: linear-gradient(0deg, rgba(21, 21, 21, 0), #151515);
+}
+
+.transition {
+  transition-property: background-color, border-color, color, fill, stroke,
+    opacity, box-shadow, transform;
+  transition: all 0.2s ease-in-out;
+}
