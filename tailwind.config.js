@@ -14,7 +14,7 @@ const screens = Object.assign(
 )
 
 module.exports = {
-  purge: [],
+  purge: ["./src/**/*.html", "./src/**/*.jsx"],
   theme: {
     screens,
     spacing,
