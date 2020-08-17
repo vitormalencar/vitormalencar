@@ -1,10 +1,10 @@
-/* eslint-disable no-undef */
 const colors = {
-  night: '#151515',
-  dusk: '#202022',
-  dawn: '#949495',
-  sunrise: '#f5f5fa',
-  zenith: '#ffffff',
+  night: "#121212",
+  dusk: "#202022",
+  dawn: "#8A8F98",
+  sunrise: "#F7F8F8",
+  zenith: "#ffffff",
+  purble: "#515cc3",
 }
-
+// eslint-disable-next-line no-undef
 module.exports = colors
