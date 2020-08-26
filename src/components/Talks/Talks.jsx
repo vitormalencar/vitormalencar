@@ -11,10 +11,10 @@ export const Talks = ({ talks }) => (
           key={title}
           itemScope="itemscope"
           itemType="http://schema.org/CreativeWork"
-          className="flex-none w-full my-4 md:m-4 md:w-240 md:min-h-240 lg:w-320 lg:min-h-320"
+          className="flex-none w-full my-4 md:m-4 md:w-240 md:min-h-240 lg:w-320 lg:min-h-320  "
           style={{ transform: "translateY(-2.9px)" }}
         >
-          <div className="flex flex-col justify-between w-full h-full p-40 min-h-inherit bg-dusk md:group-hover:opacity-50 md:hover:scale-11/10x md:hover:opacity-important transition">
+          <div className="flex flex-col rounded justify-between w-full h-full p-40 min-h-inherit bg-dusk md:group-hover:opacity-50 md:hover:scale-11/10x md:hover:opacity-important transition ">
             <header>
               <h4
                 itemProp="name"
