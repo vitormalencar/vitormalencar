@@ -16,6 +16,11 @@ const screens = Object.assign(
 module.exports = {
   purge: ["./src/**/*.html", "./src/**/*.jsx"],
   theme: {
+    borderRadius: {
+      default: "16px",
+      full: "100%",
+    },
+
     screens,
     spacing,
     minHeight: spacing,
