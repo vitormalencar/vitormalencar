@@ -35,7 +35,7 @@ export const Work = ({ work }) => (
                            Work Experience
                          </p>
                        </div>
-                       <h3 className="m t-8 text-lg  font-semibold leading-tight text-zenith">
+                       <h3 className="mt-8 text-lg  font-semibold leading-tight text-zenith">
                          {title}
                        </h3>
                        <p className="mt-8">{description}</p>
