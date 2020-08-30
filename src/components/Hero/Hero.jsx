@@ -15,5 +15,8 @@ export const Hero = ({ about }) => (
     <div className="leading-loose">
       <p className="mt-32 whitespace-pre-line">{about.paragraphOne}</p>
     </div>
+    <button className="md:block hidden rounded bg-purble text-white font-bold mt-40  px-160 py-16">
+      Lets talk
+    </button>
   </div>
 )
