@@ -7,10 +7,7 @@ export const useHasScrolled = (distance = 550) => {
     const onScroll = () => {
       const scrollCheck = window.scrollY >= distance
 
-
-      if (scrollCheck !== scroll) {
-        setScroll(scrollCheck)
-      }
+      scrollCheck !== scroll && setScroll(scrollCheck)
     }
 
     document.addEventListener("scroll", onScroll)
