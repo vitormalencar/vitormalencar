@@ -12,7 +12,7 @@ const AboutImg = () => (
               relativePath
               name
               childImageSharp {
-                fixed(width: 180, height: 180) {
+                fixed(width: 160, height: 160) {
                   ...GatsbyImageSharpFixed_withWebp_tracedSVG
                 }
               }
