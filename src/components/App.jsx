@@ -34,17 +34,20 @@ const App = () => {
             }`}
           ></div>
         </div>
-        <div className="static flex flex-col justify-between w-full p-32 md:max-w-408 lg:max-w-496 md:fixed md:h-screen lg:py-88 lg:pl-88 md:pr-0">
+        <div className="static flex flex-col justify-between w-full p-32 md:max-w-408 lg:max-w-496 md:fixed md:h-screen lg:py-80 lg:pl-88 md:pr-0">
           <div className="flex flex-col">
             <Hero about={about} />
           </div>
           <Social social={social} />
         </div>
-        <div className="static p-32 md:max-w-536 lg:max-w-736 md:absolute md:right-0 lg:py-88 lg:pr-88 md:pl-0">
+        <div className="static p-32 md:max-w-536 lg:max-w-736 md:absolute md:right-0 lg:py-80 lg:pr-88 md:pl-0">
           <Projects projects={projects} />
           <Work work={work} />
           <Talks talks={talks} />
         </div>
+        <button className="rounded bg-purble text-white font-bold fixed bottom-0 left-0 z-30 w-full px-160 py-16 block md:hidden">
+          Lets talk
+        </button>
         <div className="fixed bottom-0 left-0 z-20 w-full h-32 pointer-events-none gradient-y-transparent-night"></div>
         <div className="fixed top-0 left-0 z-20 w-full h-32 pointer-events-none gradient-y-night-transparent"></div>
       </div>
