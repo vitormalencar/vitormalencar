@@ -13,13 +13,9 @@ export const Hero = ({ about }) => (
       </h2>
     </Fade>
     <div className="leading-loose">
-      <p className="mt-32 whitespace-pre-line">{about.paragraphOne}</p>
+      <p className="mt-32 whitespace-pre-line  lg:text-md ">
+        {about.paragraphOne}
+      </p>
     </div>
-    <a
-      href="mailto:vitor.maia.alencar@gmail.com"
-      className="md:block hidden rounded bg-purble text-white font-bold mt-40 px-160 py-16"
-    >
-      Lets talk
-    </a>
   </div>
 )

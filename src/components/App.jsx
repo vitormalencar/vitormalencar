@@ -45,9 +45,6 @@ const App = () => {
           <Work work={work} />
           <Talks talks={talks} />
         </div>
-        <button className="rounded bg-purble text-white font-bold fixed bottom-0 left-0 z-30 w-full px-160 py-16 block md:hidden">
-          Lets talk
-        </button>
         <div className="fixed bottom-0 left-0 z-20 w-full h-32 pointer-events-none gradient-y-transparent-night"></div>
         <div className="fixed top-0 left-0 z-20 w-full h-32 pointer-events-none gradient-y-night-transparent"></div>
       </div>
