@@ -4,7 +4,7 @@ import AboutImg from "../Image/AboutImg"
 
 export const Hero = ({ about }) => (
   <div>
-    <div className="pb-40">
+    <div className="pb-40 lg:mt-80 md:mt-120">
       <AboutImg />
     </div>
     <Fade bottom duration={1000} delay={300} distance="0px">
@@ -13,9 +13,10 @@ export const Hero = ({ about }) => (
       </h2>
     </Fade>
     <div className="leading-loose">
-      <p className="mt-32 whitespace-pre-line  lg:text-md ">
-        {about.paragraphOne}
-      </p>
+      <p
+        dangerouslySetInnerHTML={{ __html: about.paragraphOne }}
+        className="mt-32 whitespace-pre-line  lg:text-md "
+      />
     </div>
   </div>
 )
