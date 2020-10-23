@@ -1,6 +1,6 @@
 <a href='https://vitormalencar.com'>
-<img src="https://raw.githubusercontent.com/vitormalencar/vitormalencar/master/assets/artwork.png" height='200' widht='400' alt="Vitor Alencar" />
-<img src="https://raw.githubusercontent.com/vitormalencar/vitormalencar/master/assets/qrcode.png" height='200' widht='400' alt="Vitor Alencar" />
+  <img src="https://raw.githubusercontent.com/vitormalencar/vitormalencar/master/assets/artwork.png" height='200' widht='400' alt="Vitor Alencar" />
+  <img src="https://raw.githubusercontent.com/vitormalencar/vitormalencar/master/assets/qrcode.png" height='200' widht='400' alt="Vitor Alencar" />
 </a>
 
 
