@@ -1,11 +1,14 @@
 /* eslint-disable no-undef */
-module.exports = {
+module.exports = ({
+  baseUrl = "https://elated-mestorf-600f61.netlify.app/",
+}) => ({
   siteMetadata: {
     title: `Vitor Alencar`,
     author: `Vitor Alencar`,
     keywords: `Vitor Alencar, vitormalencar, personal website, blog, developer, tech,pwa,web`,
-    description: `Developer and speaker, focused on new and scalable technologies like progressive web apps, functional programming and hybrid apps`,
+    description: `Software Engineer, Front-End • Consultant • Speaker • Traveler`,
     siteUrl: `https://www.vitormalencar.com/`,
+    baseUrl,
   },
   plugins: [
     `gatsby-plugin-sharp`,
@@ -33,4 +36,4 @@ module.exports = {
       },
     },
   ],
-}
+})
