@@ -4,7 +4,7 @@
 </a>
 
 ### Hi there I'm Vitor Alencar 👋
-## I'm a Front-end Engineer based in Berlin working
+## I'm a Front-end Engineer based in Berlin
 
 - 🏢 I'm currently working at **[Taxfix](https://taxfix.de/en).**
 - ⚙️ I use daily: `.js`, `.html`, `.css`,`
