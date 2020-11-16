@@ -4,7 +4,7 @@ import { useSiteMetadata } from "./useSiteMetadata"
 
 export const SEO = ({ post }) => {
   const defaults = useSiteMetadata()
-  console.log(title)
+
   if (defaults.baseUrl === "" && typeof window !== "undefined") {
     defaults.baseUrl = window.location.origin
   }
