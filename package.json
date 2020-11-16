@@ -12,7 +12,8 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "deploy": "yarn build && surge public -d 'https://psychotic-sister.surge.sh'",
+    "deploy:production": "gatsby build && gh-pages -d public -b master -r https://github.com/vitormalencar/vitormalencar.github.io",
+    "deploy:staging": "yarn build && surge public -d 'https://psychotic-sister.surge.sh'",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
@@ -33,6 +34,7 @@
     "react-reveal": "^1.2.2"
   },
   "devDependencies": {
+    "gh-pages": "^2.2.0",
     "babel-eslint": "^10.0.3",
     "eslint": "^7.6.0",
     "eslint-config-airbnb": "^18.2.0",
