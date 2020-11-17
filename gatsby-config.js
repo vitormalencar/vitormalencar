@@ -9,6 +9,7 @@ module.exports = {
     baseUrl: `https://www.vitormalencar.com/`,
   },
   plugins: [
+    `gatsby-plugin-cname`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-postcss`,
     `gatsby-plugin-offline`,

@@ -12,13 +12,14 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "deploy:production": "gatsby build && gh-pages -d public -b master -r https://github.com/vitormalencar/vitormalencar.github.io",
+    "deploy:production": "gh-pages -d public -b master -r git@github.com:vitormalencar/vitormalencar.github.io",
     "deploy:staging": "yarn build && surge public -d 'https://psychotic-sister.surge.sh'",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
     "gatsby": "^2.26.1",
     "gatsby-image": "^2.5.0",
+    "gatsby-plugin-cname": "^1.0.0",
     "gatsby-plugin-manifest": "^2.6.0",
     "gatsby-plugin-offline": "^3.4.0",
     "gatsby-plugin-postcss": "^3.1.0",
