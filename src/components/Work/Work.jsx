@@ -25,7 +25,7 @@ export const Work = ({ work }) => (
                 className="block p-40"
               >
                 <div className="flex">
-                  <p className="text-xs font-bold tracking-widest uppercase text-purble">
+                  <p style={{background: 'linear-gradient(92.05deg, #BCA1F7 12.09%, #E577B4 42.58%, #FF7170 84.96%)', WebkitBackgroundClip: 'text', backgroundClip: 'text', WebkitTextFillColor: 'transparent', WebkitBoxDecorationBreak: 'clone'}} className="text-xs font-bold tracking-widest uppercase">
                     Work Experience
                   </p>
                 </div>

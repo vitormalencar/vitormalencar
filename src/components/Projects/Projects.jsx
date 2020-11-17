@@ -14,9 +14,11 @@ export const Projects = ({ projects }) => (
           className="bg-dusk transition md:group-hover:opacity-50 md:hover:opacity-important md:hover:scale-11/10x my-16 rounded"
         >
           <a href={url} target="_blank" rel="noreferrer" className="block p-40">
-            <p className="text-xs font-bold tracking-widest uppercase text-purble">
+          <div className="flex">
+            <p style={{background: 'linear-gradient(92.05deg, #BCA1F7 12.09%, #E577B4 42.58%, #FF7170 84.96%)', WebkitBackgroundClip: 'text', backgroundClip: 'text', WebkitTextFillColor: 'transparent', WebkitBoxDecorationBreak: 'clone'}} className="text-xs font-bold tracking-widest uppercase">
               Community
             </p>
+            </div>
             <h3
               itemProp="name"
               className="mt-8 text-lg font-semibold leading-tight text-zenith"
