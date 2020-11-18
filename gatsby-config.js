@@ -7,6 +7,11 @@ module.exports = {
     description: `Software Engineer, Front-End • Consultant • Speaker • Traveler`,
     siteUrl: `https://www.vitormalencar.com/`,
     baseUrl: `https://www.vitormalencar.com/`,
+    social: {
+      twitter: "vitormalencar",
+      instagram: "vitormalencar",
+      github: "vitormalencar",
+    },
   },
   plugins: [
     `gatsby-plugin-cname`,

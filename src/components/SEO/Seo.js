@@ -1,43 +1,149 @@
 import React from "react"
-import { Helmet } from "react-helmet"
-import { useSiteMetadata } from "./useSiteMetadata"
+import PropTypes from "prop-types"
+import Helmet from "react-helmet"
+import { StaticQuery, graphql } from "gatsby"
 
-export const SEO = ({ post }) => {
-  const defaults = useSiteMetadata()
-
-  if (defaults.baseUrl === "" && typeof window !== "undefined") {
-    defaults.baseUrl = window.location.origin
-  }
-
-  if (defaults.baseUrl === "") {
-    console.error("Please set a baseUrl in your site metadata!")
-    return null
-  }
-
-  const title = post ? post.title : defaults.title
-  const description = post ? post.description : defaults.description
-  const url = new URL(post ? post.path : "", defaults.baseUrl)
-  const image = post && post.image ? new URL(post.image, defaults.baseUrl) : false
-
+export function SEO({
+  description,
+  lang,
+  image,
+  meta,
+  keywords,
+  title,
+  pathname,
+}) {
   return (
-    <Helmet>
-      <title>{title}</title>
-      <link rel="canonical" href={url} />
-      <meta name="description" content={description} />
-      <meta name="keywords" content={defaults.keywords} />
-      {image && <meta name="image" content={image} />}
-
-      <meta property="og:url" content={url} />
-      <meta property="og:type" content="article" />
-      <meta property="og:title" content={title} />
-      <meta property="og:description" content={description} />
-      {image && <meta property="og:image" content={image} />}
-
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:creator" content="vitormalencar" />
-      <meta name="twitter:title" content={title} />
-      <meta name="twitter:description" content={description} />
-      {image && <meta name="twitter:image" content={image} />}
-    </Helmet>
+    <StaticQuery
+      query={detailsQuery}
+      render={(data) => {
+        const metaDescription =
+          description || data.site.siteMetadata.description
+        const metaImage =
+          image && image.src
+            ? `${data.site.siteMetadata.siteUrl}${image.src}`
+            : null
+        const metaUrl = `${data.site.siteMetadata.siteUrl}${pathname}`
+        return (
+          <Helmet
+            htmlAttributes={{
+              lang,
+            }}
+            title={title}
+            titleTemplate={`%s | ${data.site.siteMetadata.title}`}
+            meta={[
+              {
+                name: `description`,
+                content: metaDescription,
+              },
+              {
+                property: `og:title`,
+                content: title,
+              },
+              {
+                property: `og:url`,
+                content: metaUrl,
+              },
+              {
+                property: `og:description`,
+                content: metaDescription,
+              },
+              {
+                property: `og:type`,
+                content: `website`,
+              },
+              {
+                name: `twitter:creator`,
+                content: `@${data.site.siteMetadata.social.twitter}`,
+              },
+              {
+                name: `twitter:title`,
+                content: title,
+              },
+              {
+                name: `twitter:description`,
+                content: metaDescription,
+              },
+              {
+                name: "google-site-verification",
+                content: "QlRmuLQWttdkbKlZ0ZwIBX3xv0M8ouqTW3wE2Eg_jKI",
+              },
+            ]
+              .concat(
+                metaImage
+                  ? [
+                      {
+                        property: `og:image`,
+                        content: metaImage,
+                      },
+                      {
+                        property: `og:image:alt`,
+                        content: title,
+                      },
+                      {
+                        property: "og:image:width",
+                        content: image.width,
+                      },
+                      {
+                        property: "og:image:height",
+                        content: image.height,
+                      },
+                      {
+                        name: `twitter:card`,
+                        content: `summary_large_image`,
+                      },
+                    ]
+                  : [
+                      {
+                        name: `twitter:card`,
+                        content: `summary`,
+                      },
+                    ]
+              )
+              .concat(
+                keywords.length > 0
+                  ? {
+                      name: `keywords`,
+                      content: keywords.join(`, `),
+                    }
+                  : []
+              )
+              .concat(meta)}
+          />
+        )
+      }}
+    />
   )
 }
+
+SEO.defaultProps = {
+  lang: `en`,
+  meta: [],
+  keywords: [],
+  pathname: ``,
+}
+
+SEO.propTypes = {
+  description: PropTypes.string,
+  lang: PropTypes.string,
+  image: PropTypes.object,
+  meta: PropTypes.array,
+  keywords: PropTypes.arrayOf(PropTypes.string),
+  pathname: PropTypes.string,
+  title: PropTypes.string.isRequired,
+}
+
+const detailsQuery = graphql`
+  query DefaultSEOQuery {
+    site {
+      siteMetadata {
+        title
+        siteUrl
+        description
+        author
+        social {
+          twitter
+        }
+      }
+    }
+  }
+`
