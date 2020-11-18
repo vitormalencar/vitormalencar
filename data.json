@@ -96,8 +96,16 @@
   ],
   "work": [
     {
+      "title": "Taxfix",
+      "duration": "2020 - CURRENT",
+      "role": "Senior Front-End Engineer",
+      "url": "https://taxfix.de/en/",
+      "image": "https://876916.smushcdn.com/1973206/wp-content/uploads/2020/06/EN-header-image-web-2019.jpg?lossy=1&strip=1&webp=1",
+      "description": "We're building the tax accountant for everyone. Our mission is simple: To help people get their money back."
+    },
+    {
       "title": "Opinary",
-      "duration": "2017 - CURRENT",
+      "duration": "2017 - 2019",
       "role": "Front-End Engineer",
       "url": "https://Opinary.com",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRTry0M76E5lHG8nc5hC8UQQWM4l93XQMIS1IypM28ISWfHJL9d",
