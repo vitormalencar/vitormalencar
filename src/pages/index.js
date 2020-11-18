@@ -6,7 +6,7 @@ import "../style/style.css"
 const Index = () => {
   return (
     <>
-      <SEO title="Vitor Alencar" />
+      <SEO title="home" />
       <App />
     </>
   )

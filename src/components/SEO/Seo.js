@@ -20,6 +20,7 @@ export function SEO({
 
   const metaUrl = `${defaults.siteUrl}${pathname}`
 
+
   return (
     <Helmet
       htmlAttributes={{

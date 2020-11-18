@@ -3,7 +3,7 @@ module.exports = {
   siteMetadata: {
     title: `Vitor Alencar`,
     author: `Vitor Alencar`,
-    keywords: `Vitor Alencar, vitormalencar, personal website, blog, developer, tech,pwa,web`,
+    keywords: `Vitor Alencar,vitormalencar,personal website, blog, developer,tech,pwa,web`,
     description: `Software Engineer, Front-End • Consultant • Speaker • Traveler`,
     siteUrl: `https://www.vitormalencar.com/`,
     baseUrl: `https://www.vitormalencar.com/`,
@@ -14,6 +14,7 @@ module.exports = {
     },
   },
   plugins: [
+    `gatsby-plugin-react-helmet`,
     `gatsby-plugin-cname`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-postcss`,
