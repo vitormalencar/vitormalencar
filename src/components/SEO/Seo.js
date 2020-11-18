@@ -2,7 +2,6 @@ import React from "react"
 import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 import { useSiteMetadata } from "./useSiteMetadata"
-
 export function SEO({
   lang,
   meta,
@@ -16,10 +15,11 @@ export function SEO({
   const metaDescription = description || defaults.description
 
   const metaImage =
-    image && image.src ? `${defaults.siteUrl}${image.src}` : null
+    image && image.src
+      ? `${defaults.siteUrl}${image.src}`
+      : `https://raw.githubusercontent.com/vitormalencar/vitormalencar/master/src/images/og.png`
 
   const metaUrl = `${defaults.siteUrl}${pathname}`
-
 
   return (
     <Helmet
