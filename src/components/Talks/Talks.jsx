@@ -5,7 +5,7 @@ export const Talks = ({ talks }) => (
     <h2 className="sticky top-0 z-40 pt-24 text-sm font-bold tracking-widest uppercase md:sr-only text-zenith">
       Talks
     </h2>
-    <div className="flex flex-wrap -my-4 md:-m-4 group pt-32 pb-40 md:py-0">
+    <div className="block md:flex flex-wrap -my-4 md:-m-4 group pt-32 pb-40 md:py-0">
       {talks.map(({ place, date, title, url }) => (
         <a
           key={title}
