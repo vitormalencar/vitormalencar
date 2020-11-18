@@ -17,12 +17,13 @@ export const Talks = ({ talks }) => (
           <article
             itemScope="itemscope"
             itemType="http://schema.org/CreativeWork"
-            className="flex-none w-full my-4 md:m-4 md:w-240 md:min-h-240 lg:w-320 lg:min-h-320  "
+            className="flex-none w-full my-4 md:m-4 md:w-240 md:min-h-240 lg:w-320 lg:min-h-320 flex-auto  "
             style={{ transform: "translateY(-2.9px)" }}
           >
             <div className="flex flex-col rounded justify-between w-full h-full p-40 min-h-inherit bg-dusk md:group-hover:opacity-50 md:hover:scale-11/10x md:hover:opacity-important transition ">
               <header>
                 <h4
+                style={{background: 'linear-gradient(92.05deg, #BCA1F7 12.09%, #E577B4 42.58%, #FF7170 84.96%)', WebkitBackgroundClip: 'text', backgroundClip: 'text', WebkitTextFillColor: 'transparent', WebkitBoxDecorationBreak: 'clone'}}
                   itemProp="name"
                   className="text-xs font-bold tracking-widest uppercase text-purble"
                 >
