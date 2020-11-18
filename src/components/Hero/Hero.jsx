@@ -4,7 +4,7 @@ import AboutImg from "../Image/AboutImg"
 
 export const Hero = ({ about }) => (
   <div>
-    <div className="pb-40 lg:mt-80 md:mt-120">
+    <div className="mb-24">
       <AboutImg />
     </div>
     <Fade bottom duration={1000} delay={300} distance="0px">
