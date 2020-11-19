@@ -38,6 +38,7 @@ module.exports = {
         theme_color: `#000000`,
         background_color: `#000000`,
         icon: "src/images/favicon.png",
+        purpose: `maskable`,
       },
     },
   ],

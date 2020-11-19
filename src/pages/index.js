@@ -8,7 +8,7 @@ const Index = () => {
   const image = useOgImage()
   return (
     <>
-      <SEO title="home" image={image} />
+      <SEO title="Home" image={image} />
       <App />
     </>
   )

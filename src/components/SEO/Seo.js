@@ -13,7 +13,6 @@ export function SEO({
 }) {
   const defaults = useSiteMetadata()
   const metaDescription = description || defaults.description
-
   const metaImage =
     image && image.src ? `${defaults.siteUrl}${image.src}` : null
 
