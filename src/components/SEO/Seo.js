@@ -15,9 +15,7 @@ export function SEO({
   const metaDescription = description || defaults.description
 
   const metaImage =
-    image && image.src
-      ? `${defaults.siteUrl}${image.src}`
-      : `https://raw.githubusercontent.com/vitormalencar/vitormalencar/master/src/images/og.png`
+    image && image.src ? `${defaults.siteUrl}${image.src}` : null
 
   const metaUrl = `${defaults.siteUrl}${pathname}`
 
