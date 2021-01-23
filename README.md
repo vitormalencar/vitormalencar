@@ -11,6 +11,7 @@
 - 🌍 I'm mostly active within the **JS Community**
 - ⚡️ Fun fact: I can't remember dates =P 
 - 🌱 Learning all about **Open Source**
+- 👨‍💻 Current project [Clipboard.js](https://github.com/zenorocha/clipboard.js)
 
 - 📫 Reach me: [![INSTAGRAM](https://img.shields.io/badge/Instagram-black?style=for-the-badge&logo=instagram)](https://www.instagram.com/vitormalencar)
 [![LINKEDIN](https://img.shields.io/badge/Linkedin-black?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/vitormalencar)
