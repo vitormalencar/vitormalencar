@@ -7,7 +7,7 @@
 ### I'm a Front-end Engineer based in Berlin
 
 - 🏢 I'm currently working at **[Taxfix](https://taxfix.de/en).**
-- ⚙️ I use daily: `.js`, `.html`, `.css`,`
+- ⚙️ I use daily: `.js`, `.html`, `.css`
 - 🌍 I'm mostly active within the **JS Community**
 - ⚡️ Fun fact: I can't remember dates =P 
 - 🌱 Learning all about **Open Source**
