@@ -5,6 +5,9 @@ const colors = {
   sunrise: "#F7F8F8",
   zenith: "#ffffff",
   purble: "#515cc3",
+  begonia: " #FF7170",
+  paleViolet: "#BCA1F7",
+  middlePurple: " #E577B4",
 }
 // eslint-disable-next-line no-undef
 module.exports = colors
