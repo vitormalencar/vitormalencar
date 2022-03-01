@@ -4,21 +4,21 @@ import GitHubButton from "react-github-btn"
 const GithubButton = () => (
   <>
     <GitHubButton
-      className="github-button"
-      href="https://github.com/cobidev/gatsby-simplefolio/fork"
-      data-icon="octicon-repo-forked"
       data-size="large"
       data-show-count="true"
+      className="github-button"
+      data-icon="octicon-repo-forked"
       aria-label="Fork cobidev/gatsby-simplefolio on GitHub"
+      href="https://github.com/cobidev/gatsby-simplefolio/fork"
     >
       Fork
     </GitHubButton>
     <GitHubButton
-      className="github-button"
-      href="https://github.com/cobidev/gatsby-simplefolio"
-      data-icon="octicon-star"
       data-size="large"
       data-show-count="true"
+      data-icon="octicon-star"
+      className="github-button"
+      href="https://github.com/cobidev/gatsby-simplefolio"
       aria-label="Star cobidev/gatsby-simplefolio on GitHub"
     >
       Star

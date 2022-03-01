@@ -21,7 +21,7 @@ export const Work = ({ work }) => {
               <article
                 itemScope="itemscope"
                 itemType="http://schema.org/CreativeWork"
-                className="transition md:group-hover:opacity-50 md:hover:opacity-important md:hover:scale-11/10x my-16 bg-dusk rounded"
+                className="transition md:group-hover:opacity-50 md:hover:opacity-important md:hover:scale-11/10x my-16 bg-dusk rounded-xl"
               >
                 <a
                   href={url}
