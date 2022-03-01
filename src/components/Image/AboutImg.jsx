@@ -21,17 +21,17 @@ const AboutImg = () => (
         }
       }
     `}
-    render={data => {
-      const image = data.images.edges.find(n =>
+    render={(data) => {
+      const image = data.images.edges.find((n) =>
         n.node.relativePath.includes("instagram-profile")
       )
       if (!image) return null
       const imageFixed = image.node.childImageSharp.fixed
       return (
         <Img
-          className="w-180 h-180  rounded-full g-image g-image--lazy g-image--loaded"
           alt={"Vitor Alencar headshot"}
           fixed={imageFixed}
+          className="w-180 h-180  rounded-full g-image g-image--lazy g-image--loaded"
         />
       )
     }}

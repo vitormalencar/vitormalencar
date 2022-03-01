@@ -16,7 +16,7 @@ export const Projects = ({ projects }) => {
             key={title}
             itemScope="itemscope"
             itemType="http://schema.org/CreativeWork"
-            className="bg-dusk transition md:group-hover:opacity-50 md:hover:opacity-important md:hover:scale-11/10x my-16 rounded"
+            className="bg-dusk transition md:group-hover:opacity-50 md:hover:opacity-important md:hover:scale-11/10x my-16 rounded-xl"
           >
             <a
               href={url}

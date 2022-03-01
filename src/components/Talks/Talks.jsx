@@ -25,11 +25,11 @@ export const Talks = ({ talks }) => {
             <article
               itemScope="itemscope"
               itemType="http://schema.org/CreativeWork"
-              className="flex-none w-full my-4 md:m-4 md:w-240 md:min-h-240 lg:w-320 lg:min-h-320 flex-auto  "
+              className="w-full my-4 md:m-4 md:w-240 md:min-h-240 lg:w-320 lg:min-h-320 flex-auto"
               style={{ transform: "translateY(-2.9px)" }}
             >
               <span style={{ opacity: 0 }}>{title}</span>
-              <div className="flex flex-col rounded justify-between w-full h-full p-40 min-h-inherit bg-dusk md:group-hover:opacity-50 md:hover:scale-11/10x md:hover:opacity-important transition ">
+              <div className="flex flex-col rounded-xl justify-between w-full h-full p-40 min-h-inherit bg-dusk md:group-hover:opacity-50 md:hover:scale-11/10x md:hover:opacity-important transition ">
                 <header>
                   <h3
                     style={{
