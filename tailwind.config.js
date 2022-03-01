@@ -1,5 +1,4 @@
 /* eslint-disable no-undef */
-const selectorParser = require("postcss-selector-parser")
 
 const colors = require("./tailwind/colors")
 const spacing = require("./tailwind/spacing")
@@ -8,7 +7,7 @@ const breakpoints = require("./tailwind/breakpoints")
 
 const screens = Object.assign(
   {},
-  ...Object.keys(breakpoints).map(breakpoint => ({
+  ...Object.keys(breakpoints).map((breakpoint) => ({
     [breakpoint]: `${breakpoints[breakpoint]}px`,
   }))
 )
@@ -16,11 +15,6 @@ const screens = Object.assign(
 module.exports = {
   purge: ["./src/**/*.html", "./src/**/*.jsx"],
   theme: {
-    borderRadius: {
-      default: "16px",
-      full: "100%",
-    },
-
     screens,
     spacing,
     minHeight: spacing,
@@ -37,9 +31,7 @@ module.exports = {
     },
     extend: {
       colors,
-      opacity: {
-        important: "1 !important",
-      },
+      opacity: { important: "1 !important" },
     },
   },
   variants: {
@@ -78,27 +70,7 @@ module.exports = {
           transform: `translateY(-${spacing["96"]})`,
         },
       }
-      addUtilities(newUtilities, [
-        "responsive",
-        "hover",
-        "group-hover",
-        "group-2-hover",
-      ])
-    },
-    function({ addVariant }) {
-      addVariant("group-2-hover", ({ modifySelectors, separator }) => {
-        return modifySelectors(({ selector }) => {
-          return selectorParser(selectors => {
-            selectors.walkClasses(sel => {
-              sel.value = `group-2-hover${separator}${sel.value}`
-              sel.parent.insertBefore(
-                sel,
-                selectorParser().astSync(".group-2:hover ")
-              )
-            })
-          }).processSync(selector)
-        })
-      })
+      addUtilities(newUtilities, ["responsive", "hover", "group-hover"])
     },
   ],
 }
