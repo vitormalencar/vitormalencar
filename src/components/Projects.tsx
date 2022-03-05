@@ -1,8 +1,16 @@
 import React from "react"
 import useSound from "use-sound"
-import bite from "../../sounds/bite.mp3"
+import bite from "../sounds/bite.mp3"
 
-export const Projects = ({ projects }) => {
+type Props = {
+  projects: {
+    title: string
+    description: string
+    url: string
+  }[]
+}
+
+ const Projects = ({ projects }: Props) => {
   const soundUrl = bite
   const [play, { stop }] = useSound(soundUrl, { volume: 0.5 })
   return (
@@ -10,11 +18,12 @@ export const Projects = ({ projects }) => {
       <h2 className="sticky top-0 z-40 pt-24 text-sm font-bold tracking-widest uppercase md:sr-only text-zenith">
         Projects
       </h2>
+
       <div className="-my-8 group pt-32 pb-40 br-20  md:py-0">
         {projects.map(({ title, description, url }) => (
           <article
             key={title}
-            itemScope="itemscope"
+            itemScope={true}
             itemType="http://schema.org/CreativeWork"
             className="bg-dusk transition md:group-hover:opacity-50 md:hover:opacity-important md:hover:scale-11/10x my-16 rounded-xl"
           >
@@ -23,8 +32,8 @@ export const Projects = ({ projects }) => {
               target="_blank"
               rel="noreferrer"
               className="block p-40"
-              onMouseEnter={play}
-              onMouseLeave={stop}
+              onMouseEnter={() => play()}
+              onMouseLeave={() => stop()}
             >
               <div className="flex">
                 <p
@@ -55,3 +64,5 @@ export const Projects = ({ projects }) => {
     </div>
   )
 }
+
+export default Projects

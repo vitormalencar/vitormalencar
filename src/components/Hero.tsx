@@ -1,8 +1,15 @@
 import React from "react"
 import Fade from "react-reveal/Fade"
-import AboutImg from "../Image/AboutImg"
+import AboutImg from "./AboutImg"
 
-export const Hero = ({ about }) => (
+type AboutProps = {
+  about: {
+    title: string
+    paragraphOne: string
+  }
+}
+
+ const Hero = ({ about }: AboutProps) => (
   <div>
     <div className="pb-40 md:mt-20">
       <AboutImg />
@@ -28,3 +35,5 @@ export const Hero = ({ about }) => (
     </div>
   </div>
 )
+
+export default Hero

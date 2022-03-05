@@ -1,6 +1,8 @@
 import React from "react"
 
-export const Social = ({ social }) => (
+type Props = { social: { name: string; url: string }[] }
+
+const Social = ({ social }: Props) => (
   <div className="flex items-center w-full mt-32">
     <ul className="flex -mx-16 text-zenith">
       {social.map(({ name, url }) => (
@@ -18,3 +20,5 @@ export const Social = ({ social }) => (
     </ul>
   </div>
 )
+
+export default Social
