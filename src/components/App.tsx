@@ -1,13 +1,13 @@
 import React from "react"
 
-import { Hero } from "./Hero/Hero"
-import { Work } from "./Work/Work"
-import { Talks } from "./Talks/Talks"
-import { Social } from "./Social/Social"
-import { Projects } from "./Projects/Projects"
+import Hero from "./Hero"
+import Work from "./Work"
+import Talks from "./Talks"
+import Social from "./Social"
+import Projects from "./Projects"
 
 import { useHasScrolled } from "../hooks/useHasScrolled"
-import { work, social, about, talks, projects } from "../../data.json"
+import Data from "../../data.json"
 
 const App = () => {
   const shift = useHasScrolled(550)
@@ -36,14 +36,14 @@ const App = () => {
         </div>
         <div className="static flex flex-col justify-between w-full p-32 md:max-w-408 lg:max-w-496 md:fixed md:h-screen lg:py-80 lg:pl-88 md:pr-0">
           <div className="flex flex-col">
-            <Hero about={about} />
+            <Hero about={Data.about} />
           </div>
-          <Social social={social} />
+          <Social social={Data.social} />
         </div>
         <div className="static p-32 md:max-w-536 lg:max-w-736 md:absolute md:right-0 lg:py-80 lg:pr-88 md:pl-0">
-          <Projects projects={projects} />
-          <Work work={work} />
-          <Talks talks={talks} />
+          <Projects projects={Data.projects} />
+          <Work work={Data.work} />
+          <Talks talks={Data.talks} />
         </div>
         <div className="fixed bottom-0 left-0 z-20 w-full h-32 pointer-events-none gradient-y-transparent-night"></div>
         <div className="fixed top-0 left-0 z-20 w-full h-32 pointer-events-none gradient-y-night-transparent"></div>

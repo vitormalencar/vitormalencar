@@ -7,6 +7,13 @@ export default function HTML({
   bodyAttributes,
   preBodyComponents,
   postBodyComponents,
+}:{
+  body: string,
+  htmlAttributes: any,
+  headComponents: any,
+  bodyAttributes: any,
+  preBodyComponents: any,
+  postBodyComponents: any,
 }) {
   return (
     <html {...htmlAttributes}>

@@ -1,11 +1,21 @@
 import React from "react"
-import Fade from "react-reveal/Fade"
 import useSound from "use-sound"
-import bite from "../../sounds/bite.mp3"
 
-export const Work = ({ work }) => {
+import Fade from "react-reveal/Fade"
+import bite from "../sounds/bite.mp3"
+
+type Props = {
+  work: {
+    title: string
+    description: string
+    url: string
+  }[]
+}
+
+const Work = ({ work }: Props) => {
   const soundUrl = bite
   const [play, { stop }] = useSound(soundUrl, { volume: 0.5 })
+
   return (
     <div id="projects" className="md:pt-88 md:-mt-96">
       <h2 className="sticky top-0 z-40  pt-24 text-sm font-bold tracking-widest uppercase md:sr-only text-zenith">
@@ -19,7 +29,7 @@ export const Work = ({ work }) => {
           >
             <Fade className right duration={500} delay={300} distance="300px">
               <article
-                itemScope="itemscope"
+                itemScope={true}
                 itemType="http://schema.org/CreativeWork"
                 className="transition md:group-hover:opacity-50 md:hover:opacity-important md:hover:scale-11/10x my-16 bg-dusk rounded-xl"
               >
@@ -28,8 +38,8 @@ export const Work = ({ work }) => {
                   target="_blank"
                   rel="noreferrer"
                   className="block p-40"
-                  onMouseEnter={play}
-                  onMouseLeave={stop}
+                  onMouseEnter={() => play()}
+                  onMouseLeave={() => stop()}
                 >
                   <div className="flex">
                     <p
@@ -59,3 +69,5 @@ export const Work = ({ work }) => {
     </div>
   )
 }
+
+export default Work

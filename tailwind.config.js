@@ -1,9 +1,71 @@
-/* eslint-disable no-undef */
+const colors = {
+  dusk: "#202022",
+  dawn: "#8A8F98",
+  night: "#121212",
+  zenith: "#ffffff",
+  purble: "#515cc3",
+  sunrise: "#F7F8F8",
+  begonia: " #FF7170",
+  paleViolet: "#BCA1F7",
+  middlePurple: " #E577B4",
+}
 
-const colors = require("./tailwind/colors")
-const spacing = require("./tailwind/spacing")
-const fontSize = require("./tailwind/font-size")
-const breakpoints = require("./tailwind/breakpoints")
+const spacing = {
+  inherit: "inherit",
+  px: "1px",
+  0: "0",
+  2: "2px",
+  4: "4px",
+  8: "8px",
+  16: "16px",
+  24: "24px",
+  32: "32px",
+  40: "40px",
+  48: "48px",
+  56: "56px",
+  64: "64px",
+  72: "72px",
+  80: "80px",
+  88: "88px",
+  96: "96px",
+  104: "104px",
+  112: "112px",
+  120: "120px",
+  160: "160px",
+  240: "240px",
+  296: "296px",
+  320: "320px",
+  360: "360px",
+  384: "384px",
+  408: "408px",
+  496: "496px",
+  528: "528px",
+  536: "536px",
+  736: "736px",
+  1440: "1440px",
+}
+
+const fontSize = {
+  xs: "10px",
+  sm: "12px",
+  base: "14px",
+  md: "18px",
+  lg: "24px",
+  xl: "32px",
+  "2xl": "48px",
+  "3xl": "56px",
+  "4xl": "64px",
+  "5xl": "72px",
+  "6xl": "80px",
+  "7xl": "88px",
+}
+
+const breakpoints = {
+  sm: 640,
+  md: 992,
+  lg: 1280,
+  xl: 1440,
+}
 
 const screens = Object.assign(
   {},
@@ -12,8 +74,9 @@ const screens = Object.assign(
   }))
 )
 
+// eslint-disable-next-line no-undef
 module.exports = {
-  purge: ["./src/**/*.html", "./src/**/*.jsx"],
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     screens,
     spacing,

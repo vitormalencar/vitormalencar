@@ -1,12 +1,13 @@
 /* eslint-disable no-undef */
+/** @type {import('gatsby').GatsbyConfig} */
 module.exports = {
   siteMetadata: {
     title: `Vitor Alencar`,
     author: `Vitor Alencar`,
-    keywords: `Vitor Alencar,vitormalencar,personal website, blog, developer,tech,pwa,web`,
-    description: `Software Engineer • Consultant • Speaker • Traveler`,
     siteUrl: `https://www.vitormalencar.com/`,
     baseUrl: `https://www.vitormalencar.com/`,
+    description: `Software Engineer • Consultant • Speaker • Traveler`,
+    keywords: `Vitor Alencar,vitormalencar,personal website, blog, developer,tech,pwa,web`,
     social: {
       twitter: "vitormalencar",
       instagram: "vitormalencar",
@@ -16,10 +17,18 @@ module.exports = {
   plugins: [
     `gatsby-plugin-cname`,
     `gatsby-plugin-sharp`,
+
     `gatsby-plugin-postcss`,
     `gatsby-plugin-offline`,
-    `gatsby-transformer-sharp`,
     `gatsby-plugin-react-helmet`,
+    "gatsby-plugin-postcss",
+    {
+      resolve: `gatsby-transformer-sharp`,
+      options: {
+        // The option defaults to true
+        checkSupportedExtensions: false,
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: { name: `images`, path: `${__dirname}/src/images/` },
