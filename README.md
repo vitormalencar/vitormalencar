@@ -3,7 +3,7 @@
   <img src="https://raw.githubusercontent.com/vitormalencar/vitormalencar/master/assets/qrcode.png" height='200' widht='400' alt="Vitor Alencar" />
 </a>
 
-## Hi there I'm Vitor Alencar <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px">
+## Hi there I'm Vitor Alencar
 ### I'm a Front-end Engineer based in Berlin
 
 - 🏢 I'm currently working at **[Taxfix](https://taxfix.de/en).**
